@@ -1,3 +1,5 @@
+/* /app/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +16,47 @@
   }
 }
 
-body {
+/* body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Blinks style */
+
+/* Background gradient for the full page */
+body {
+  background: linear-gradient(to right, #122863, #210835);
+  color: #FFFFFF; /* Ensure text is white for contrast */
+}
+
+/* Center the Blink component with padding */
+.blink-container {
+  max-width: 450px; /* Limit the width of the Blink component */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0px; /* Add padding */
+  background: #0A0A0A; /* Dark background for Blink component */
+  border-radius: 8px; /* Slight rounding of edges */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Wallet connection styling */
+/* Wallet button styling */
+.wallet-button-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.wallet-status {
+  font-size: 14px;
+  color: #4ade80;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 12px;
+  border-radius: 4px;
 }
